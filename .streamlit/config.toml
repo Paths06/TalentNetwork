@@ -1,0 +1,10 @@
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
+
+[global]
+# Command to run after 'pip install -r requirements.txt'
+# This ensures the SpaCy model is downloaded during deployment
+post_install = "python -m spacy download en_core_web_sm"
